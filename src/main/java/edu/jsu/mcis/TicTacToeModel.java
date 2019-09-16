@@ -75,7 +75,11 @@ public class TicTacToeModel {
 
         /* Initialize board by filling every square with empty marks */
         
-        // INSERT YOUR CODE HERE
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                board[i][j] = Mark.EMPTY;
+            }
+        }
         
     }
 	
