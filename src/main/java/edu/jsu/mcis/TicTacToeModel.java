@@ -101,9 +101,15 @@ public class TicTacToeModel {
         
         /* Return TRUE if the specified location is within the bounds of the board */
         
-        // INSERT YOUR CODE HERE
-
-        return false; // remove this line later!
+        if (row > board) {
+            return false;
+        }
+        if (col > board) {
+            return false;
+        }
+        else {
+            return true;
+        }
         
     }
 	
@@ -111,9 +117,16 @@ public class TicTacToeModel {
         
         /* Return TRUE if the square at specified location is marked */
         
-        // INSERT YOUR CODE HERE
+        if (!(row.equals Mark.EMPTY)) {
+            return true;
+        }
+        if (!(col.equals Mark.EMPTY)) {
+            return true;
+        }
+        else {
+            return false;
+        }
 
-        return false; // remove this line later!
             
     }
 	
@@ -133,9 +146,17 @@ public class TicTacToeModel {
            TIE, or if the game is not over.  Return the corresponding Result
            value */
         
-        // INSERT YOUR CODE HERE
+        isMarkWin(mark) {
 
-        return null; // remove this line later!
+        }
+        isTie() {
+
+        }
+        isGameover() {
+
+        }
+
+        return Result;
         
     }
 	
@@ -144,20 +165,20 @@ public class TicTacToeModel {
         /* Check the squares of the board to see if the specified mark is the
            winner */
         
-        // INSERT YOUR CODE HERE
+        return (Result.X = getResult()) {
 
-        return false; // remove this line later!
-
+        }
+        return (Result.O = getResult()) {
+            
+        }
     }
 	
     private boolean isTie() {
         
         /* Check the squares of the board to see if the game is a tie */
         
-        // INSERT YOUR CODE HERE
-
-        return false; // remove this line later!
-        
+        return (Result.TIE = getResult());
+  
     }
 
     public boolean isGameover() {
