@@ -91,9 +91,11 @@ public class TicTacToeModel {
            toggle "xTurn" from true to false (or vice-versa) to switch to the
            other player before returning TRUE.  Otherwise, return FALSE. */
         
-        // INSERT YOUR CODE HERE
+        isValidSquare(row, col);
+        isSquareMarked(row, col);
+        getMark(row, col);
+        isXTurn();
         
-        return false; // remove this line later!
         
     }
 	
@@ -134,9 +136,8 @@ public class TicTacToeModel {
         
         /* Return the mark from the square at the specified location */
         
-        // INSERT YOUR CODE HERE
+        return mark(row, col);
 
-        return null; // remove this line later!
             
     }
 	
@@ -165,11 +166,11 @@ public class TicTacToeModel {
         /* Check the squares of the board to see if the specified mark is the
            winner */
         
-        return (Result.X = getResult()) {
-
+        if (Result.equals Mark.X) {
+            return getResult();
         }
-        return (Result.O = getResult()) {
-            
+        if (Result.equals Mark.O) {
+            return getResult();
         }
     }
 	
@@ -212,7 +213,7 @@ public class TicTacToeModel {
         
         /* Output the board contents as a string (see examples) */
         
-        // INSERT YOUR CODE HERE
+        board.toString;
         
         return output.toString();
         
