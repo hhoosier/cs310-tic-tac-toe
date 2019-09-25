@@ -133,13 +133,12 @@ public class TicTacToeModel {
     }
 	
     public Mark getMark(int row, int col) {
-        
         /* Return the mark from the square at the specified location */
         
         return mark(row, col);
-
-            
     }
+        
+    
 	
     public Result getResult() {
         
@@ -160,7 +159,6 @@ public class TicTacToeModel {
         return Result;
         
     }
-	
     private boolean isMarkWin(Mark mark) {
         
         /* Check the squares of the board to see if the specified mark is the
@@ -172,7 +170,7 @@ public class TicTacToeModel {
         if (Result.equals Mark.O) {
             return getResult();
         }
-    }
+        }
 	
     private boolean isTie() {
         

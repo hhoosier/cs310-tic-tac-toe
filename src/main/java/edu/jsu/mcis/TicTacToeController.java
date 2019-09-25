@@ -26,7 +26,7 @@ public class TicTacToeController {
            using the View's "showInputError()" if the move is invalid. */
 
         showBoard();
-        getNextMove() {
+        getNextMove(); {
             if (makeMark) {
 
             }
