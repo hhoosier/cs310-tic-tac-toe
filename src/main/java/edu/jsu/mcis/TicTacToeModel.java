@@ -119,14 +119,8 @@ public class TicTacToeModel {
         
         /* Return TRUE if the square at specified location is marked */
         
-        if (!(row.equals Mark.EMPTY)) {
+        if (isSquareMarked() != Mark.EMPTY) {
             return true;
-        }
-        if (!(col.equals Mark.EMPTY)) {
-            return true;
-        }
-        else {
-            return false;
         }
 
             
@@ -146,13 +140,13 @@ public class TicTacToeModel {
            TIE, or if the game is not over.  Return the corresponding Result
            value */
         
-        isMarkWin(mark) {
+        isMarkWin(mark); {
 
         }
-        isTie() {
+        isTie(); {
 
         }
-        isGameover() {
+        isGameover(); {
 
         }
 
@@ -164,10 +158,10 @@ public class TicTacToeModel {
         /* Check the squares of the board to see if the specified mark is the
            winner */
         
-        if (Result.equals Mark.X) {
+        if (Result.X == getResult()) {
             return getResult();
         }
-        if (Result.equals Mark.O) {
+        if (Result.O == getResult()) {
             return getResult();
         }
         }
@@ -176,7 +170,7 @@ public class TicTacToeModel {
         
         /* Check the squares of the board to see if the game is a tie */
         
-        return (Result.TIE = getResult());
+        return (Result.TIE == getResult());
   
     }
 
@@ -211,7 +205,7 @@ public class TicTacToeModel {
         
         /* Output the board contents as a string (see examples) */
         
-        board.toString;
+        output = board.String;
         
         return output.toString();
         
